@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import AnimatedTitle from "./AnimatedTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -16,11 +17,18 @@ const About = () => {
       },
     });
 
+    gsap.set(".mask-clip-path", {
+      clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)",
+    });
+
     clipAnimation.to(".mask-clip-path", {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       width: "100vw",
       height: "100vh",
       borderRadius: 0,
     });
+
+    
   });
 
   return (
@@ -31,10 +39,10 @@ const About = () => {
           Welcome to Honkai Star Rail
         </h2>
 
-        <div className="mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]">
-          STEP INT<b>O</b> THE ENDLESS <br />
-          NIGHT OF <b>A</b>MPHOREUS
-        </div>
+        <AnimatedTitle
+          title="STEP INT<b>O</b> THE ENDLESS <br/>NIGHT OF <b>A</b>MPHOREUS"
+          containerClass="mt-5 !text-black text-center"
+        />
 
         <div className="about-subtext">
           <p>Explore Amphoreus</p>
