@@ -17,11 +17,18 @@ const About = () => {
       },
     });
 
+    gsap.set(".mask-clip-path", {
+      clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)",
+    });
+
     clipAnimation.to(".mask-clip-path", {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       width: "100vw",
       height: "100vh",
       borderRadius: 0,
     });
+
+    
   });
 
   return (
