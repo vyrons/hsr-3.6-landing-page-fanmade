@@ -70,8 +70,7 @@ const EndFeatures = () => {
                   onMouseMove={handleMouseMove}
                   src="/img/entrance.webp"
                   alt="entrance"
-                  className="w-full h-full object-cover" // Ganti object-contain dengan object-cover
-                  style={{ maxWidth: "100%", maxHeight: "100%" }}
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -90,7 +89,7 @@ const EndFeatures = () => {
             <Button
               id="realm-btn"
               title="discover prologue"
-              containerClass="mt-5 bg-blue-50 md:flex hidden items-center justify-center gap-1"
+              containerClass="mt-5 bg-blue-50"
             />
           </div>
         </div>
