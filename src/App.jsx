@@ -4,6 +4,7 @@ import About from './components/About'
 import Navbar from './components/Navbar'
 import Features from './components/Features'
 import EndFeatures from './components/EndFeatures'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About/>
       <Features/>
       <EndFeatures/>
+      <Footer/>
     </main>
   )
 }
