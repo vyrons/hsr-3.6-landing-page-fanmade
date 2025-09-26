@@ -117,12 +117,18 @@ const Features = () => {
             />
           </BentoTilt>
           <BentoTilt className="bento-tilt_2">
-            <div className="flex size-full flex-col justify-between bg-violet-50 p-5">
-              <h1 className="bento-title special-font max-w-64 text-black">
-                D<b>o</b>wnlo<b>a</b>d <b>n</b>ow!
-              </h1>
-              <TiLocationArrow className="m-5 scale-[5] self-end" />
-            </div>
+            <a
+              href="https://hsr.hoyoverse.com/ua2?lp=sr03&utm_source=SEA_google_SEA_search_UA2_Brand&hoyotrace_channel=ga_channel&gad_source=1&gad_campaignid=20028025355&gbraid=0AAAAAoiRZe003I7iZ9ToG9VRbEWOh5xkf&gclid=CjwKCAjw89jGBhB0EiwA2o1On_jidq8BJZ4ZxePhQyIQWh0RRyGBsH9mIKGlDSMEa70PGOOH5ovlIRoCbQQQAvD_BwE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex size-full flex-col justify-between bg-violet-50 p-5">
+                <h1 className="bento-title special-font max-w-64 text-black">
+                  D<b>o</b>wnlo<b>a</b>d <b>n</b>ow!
+                </h1>
+                <TiLocationArrow className="m-5 scale-[5] self-end" />
+              </div>
+            </a>
           </BentoTilt>
           <BentoTilt className="bento-tilt_2">
             <BentoCard
