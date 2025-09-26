@@ -86,11 +86,17 @@ const EndFeatures = () => {
               your fate in Version 3.6 as you take on new challenges, powerful
               enemies, and exclusive rewards awaiting every Trailblazer.
             </p>
-            <Button
-              id="realm-btn"
-              title="Join the Adventure"
-              containerClass="mt-5 bg-blue-50"
-            />
+            <a
+              href="https://hsr.hoyoverse.com/en-us/home"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                id="realm-btn"
+                title="Join the Adventure"
+                containerClass="mt-5 bg-blue-50"
+              />
+            </a>
           </div>
         </div>
       </div>

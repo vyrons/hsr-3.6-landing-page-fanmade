@@ -159,12 +159,18 @@ const Hero = () => {
               <br /> Version 3.6.
             </p>
 
-            <Button
-              id="watch-trailer"
-              title="Watch Trailer"
-              leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
-            />
+            <a
+              href="https://youtu.be/_2B_woXdf_E?si=l14SEav_2gjxeLe0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                id="watch-trailer"
+                title="Watch Trailer"
+                leftIcon={<TiLocationArrow />}
+                containerClass="bg-yellow-300 flex-center gap-1"
+              />
+            </a>
           </div>
         </div>
       </div>

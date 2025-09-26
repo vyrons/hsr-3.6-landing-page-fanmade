@@ -16,7 +16,6 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setisNavVisible] = useState(true);
 
-
   const { y: currentScrollY } = useWindowScroll();
 
   useEffect(() => {
@@ -64,13 +63,18 @@ const Navbar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7">
             <img src="img/logo.png" alt="logo" className="w-20" />
-
-            <Button
-              id="download-button"
-              title="download"
-              rightIcon={<TiLocationArrow />}
-              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-            />
+            <a
+              href="https://hsr.hoyoverse.com/ua2?lp=sr03&utm_source=SEA_google_SEA_search_UA2_Brand&hoyotrace_channel=ga_channel&gad_source=1&gad_campaignid=20028025355&gbraid=0AAAAAoiRZe003I7iZ9ToG9VRbEWOh5xkf&gclid=CjwKCAjw89jGBhB0EiwA2o1On_jidq8BJZ4ZxePhQyIQWh0RRyGBsH9mIKGlDSMEa70PGOOH5ovlIRoCbQQQAvD_BwE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                id="download-button"
+                title="download"
+                rightIcon={<TiLocationArrow />}
+                containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+              />
+            </a>
           </div>
 
           <div className="flex h-full items-center">
